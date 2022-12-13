@@ -1,0 +1,43 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  padding: 2em;
+}
+
+.heading-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  vertical-align: bottom;
+
+  &__heading {
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: blue;
+    text-align: start;
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    color: blue;
+    cursor: pointer;
+  }
+}
+
+.createTodo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .App {
+    margin: auto;
+    min-height: 100vh;
+  }
+}

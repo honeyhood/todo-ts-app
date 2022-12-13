@@ -1,0 +1,34 @@
+.form {
+  margin-top: 1em;
+  width: 100%;
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.todoInput {
+  outline: 0;
+  border: blue solid 2px;
+  width: 100%;
+  padding: 0.8em;
+  color: blue;
+}
+
+.formButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: solid 2px blue;
+  background-color: blue;
+  padding: 0.8em;
+  color: white;
+  cursor: pointer;
+  transition-duration: 0.4s;
+
+  &:hover {
+    border: solid 2px blue;
+    background-color: white;
+    color: blue;
+  }
+}

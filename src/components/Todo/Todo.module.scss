@@ -1,0 +1,64 @@
+.todoItem {
+  position: relative;
+  border: solid 2px blue;
+  margin-top: 2em;
+  width: 100%;
+  overflow: hidden;
+  padding: 1em;
+  white-space: nowrap;
+  color: blue;
+}
+
+.todoTitle {
+  font-size: 1.1em;
+
+  &__toggled {
+    text-decoration: line-through;
+    font-size: 1.25em;
+  }
+}
+
+.deleteButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background-color: blue;
+  padding: 1.17em;
+  color: white;
+  transition-duration: 0.4s;
+
+  &:hover {
+    border-left: solid 2px blue;
+    background-color: white;
+    color: blue;
+  }
+}
+
+.editButton {
+  position: absolute;
+  top: 0;
+  right: 5.2em;
+  border: none;
+  border-left: solid 2px blue;
+  background-color: white;
+  padding: 1.17em;
+  color: blue;
+  cursor: pointer;
+  transition-duration: 0.4s;
+
+  &:hover {
+    background-color: blue;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .todoItem {
+    min-width: 100%;
+  }
+
+  .todoTitle {
+    font-size: 1.25em;
+  }
+}
